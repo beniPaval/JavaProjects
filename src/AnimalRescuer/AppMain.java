@@ -6,7 +6,7 @@ public class AppMain {
 
         Dog myObject = new Dog();
 
-        System.out.println("Numele catelului este " + myObject.name + " si are " + myObject.age + " luni.");
+        System.out.println("Numele catelului este " + myObject.name + " si are " + myObject.age + " luni" + " are un nivel de sanatate de " + myObject.healthLevel + " din 10 " + " un nivel de foame de " + myObject.hungerSensation + " din 10 " + "un nivel de spirit de " + myObject.spiritLevel + " din 10.") ;
 
        Girl girl = new Girl();
         System.out.println("Numele fetitei este " + girl.name + " si are " + girl.moneyAvailable + " lei disponibili.");
