@@ -26,5 +26,19 @@ public class Main {
 
        int d = 5 + 15 / 3 * 2 - 8 % 3;
        System.out.println("Rezolvarea de la punctul d este: " + d);
+
+
+
+        System.out.println("   J     a    V      V    a");
+        System.out.println("   J    a a    V    V    a a");
+        System.out.println("J  J   aaaaa    V V     aaaaa");
+        System.out.println(" JJ   a     a    V    a      a");
+
+
+        System.out.println(" +\"\"\"\"\"+ ");
+        System.out.println("[| o o |]");
+        System.out.println(" |  ^  | ");
+        System.out.println(" | '-' | ");
+        System.out.println(" +-----+ ");
     }
 }
