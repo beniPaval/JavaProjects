@@ -16,5 +16,8 @@ public class AppMain {
 
         Veterinarian vet = new Veterinarian();
         System.out.println("Numele veterinarului este " + vet.name + " si are specialitatea de " + vet.speciality + ".");
+
+        Activity act = new Activity();
+        System.out.println("Numele activitatii preferate a catelului este " + act.name + ".");
     }
 }

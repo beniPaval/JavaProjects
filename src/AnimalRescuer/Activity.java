@@ -1,7 +1,7 @@
 package AnimalRescuer;
 
 public class Activity {
-    public String name = "running";
+    public String name = "sa aduca mingea";
 
 
 }
