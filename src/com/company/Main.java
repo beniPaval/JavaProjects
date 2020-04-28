@@ -5,8 +5,6 @@ public class Main {
     public static void main(String[] args) {
         printMyName();
 
-        System.out.println("Rezultatul adunarii este: " + adunare(7, 8));
-
         System.out.println("Rezultatul impartirii a doua numere, daca un numar nu este intreg: " + virgula(10, 3));
 
         System.out.println("Rezolvarea de la punctul a este: " + ex1(-5, 8, 6));
@@ -16,12 +14,6 @@ public class Main {
         System.out.println("Rezolvarea de la punctul c este: " + ex3(20, -3, 5, 8));
 
         System.out.println("Rezolvarea de la punctul d este: " + ex4(5, 15, 3, 2, 8, 3));
-
-        System.out.println("Rezultatul scaderii este: " + scadere(10, 8));
-
-        System.out.println("Rezultatul inmultirii este: " + inmultire(2, 2));
-
-        System.out.println("Rezultatul impartirii este: " + impartire(14, 2));
 
         java();
 
@@ -36,8 +28,28 @@ public class Main {
         System.out.println("Rezultatul transformarii din inch in m este: " + inch(100));
 
 
+    Calculator myObject = new Calculator();
+        System.out.println("Rezultatul adunarii este: "+ myObject.adunare(7,8));
 
+        System.out.println("Rezultatul scaderii este: "+ myObject.scadere(10,8));
 
+        System.out.println("Rezultatul inmultirii este: "+ myObject.inmultire(2,2));
+
+        System.out.println("Rezultatul impartirii este: "+ myObject.impartire(14,2));
+
+        LogicalOp op = new LogicalOp();
+        int higher = op.checkBiggerNumber(7,8);
+        System.out.println("Numarul cel mai mare este: " + higher);
+        String text = "FastTrackIT";
+        System.out.println(op.checkTextFast(text));
+        String textt = "FastTrackITs";
+        System.out.println(op.checkText(textt,7));
+        System.out.println(op.checkNumb(5));
+        System.out.println(op.checkNumb4(0));
+        System.out.println(op.caseN(1));
+        System.out.println(op.isNumberEven(266));
+        System.out.println(op.isEligibleToVote(19));
+        System.out.println(op.biggest(10,20,5));
 
 
     }
@@ -49,10 +61,7 @@ public class Main {
 
 
 
-    public static int adunare(int z, int y){
-        int rezultat = z + y;
-        return rezultat;
-    }
+
 
     public static float virgula (float a, float b){
       float rezultat2 = a / b;
@@ -79,19 +88,7 @@ public class Main {
         return d;
     }
 
-    public static int scadere(int z, int y){
-        int rezultat = z - y;
-        return rezultat;
-    }
 
-    public static int inmultire(int z, int y){
-        int rezultat = z * y;
-        return rezultat;
-    }
-    public static int impartire(int z, int y){
-        int rezultat = z / y;
-        return rezultat;
-    }
 
     public static void java(){
         System.out.println("   J     a    V      V    a");
