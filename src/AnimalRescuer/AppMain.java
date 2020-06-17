@@ -4,20 +4,20 @@ public class AppMain {
 
     public static void main(String[] args) {
 
-        Dog myObject = new Dog();
+        Animal myObject = new Animal();
 
-        System.out.println("Numele catelului este " + myObject.name + " si are " + myObject.age + " luni" + " are un nivel de sanatate de " + myObject.healthLevel + " din 10 " + " un nivel de foame de " + myObject.hungerSensation + " din 10 " + "un nivel de spirit de " + myObject.spiritLevel + " din 10.") ;
+        System.out.println("Numele catelului este " + myObject.getName()+ " si are " + myObject.getAge() + " luni" + " are un nivel de sanatate de " + myObject.getHealthLevel() + " din 10 " + " un nivel de foame de " + myObject.getHungerSensation() + " din 10 " + "un nivel de spirit de " + myObject.getSpiritLevel() + " din 10.") ;
 
        Girl girl = new Girl();
-        System.out.println("Numele fetitei este " + girl.name + " si are " + girl.moneyAvailable + " lei disponibili.");
+        System.out.println("Numele fetitei este " + girl.getName() + " si are " + girl.getMoneyAvailable() + " lei disponibili.");
 
-        DogFood food = new DogFood();
-        System.out.println("Numele mancarii preferate a catelului este " + food.name + " si costa " + food.price + " lei.");
+        Food food = new Food();
+        System.out.println("Numele mancarii preferate a catelului este " + food.getName() + " si costa " + food.getPrice() + " lei.");
 
         Veterinarian vet = new Veterinarian();
-        System.out.println("Numele veterinarului este " + vet.name + " si are specialitatea de " + vet.speciality + ".");
+        System.out.println("Numele veterinarului este " + vet.getName() + " si are specialitatea de " + vet.getSpeciality() + ".");
 
         Activity act = new Activity();
-        System.out.println("Numele activitatii preferate a catelului este " + act.name + ".");
+        System.out.println("Numele activitatii preferate a catelului este " + act.getName()+ ".");
     }
 }

@@ -1,6 +1,22 @@
 package AnimalRescuer;
 
 public class Veterinarian {
-    public String name = "dr Vasilescu";
-    public String speciality = "Chirurgie";
+    private String name = "dr Vasilescu";
+    private String speciality = "Chirurgie";
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSpeciality() {
+        return speciality;
+    }
+
+    public void setSpeciality(String speciality) {
+        this.speciality = speciality;
+    }
 }

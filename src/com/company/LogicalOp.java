@@ -52,16 +52,16 @@ public class LogicalOp {
     }
 
 
-    public String caseN(int x) {
+    public void caseN (int x){
         switch (x) {
             case 1:
-                return "The number is: 1!";
+                System.out.println("The number is: 1!");
             case 2:
-                return "The number is: 2!";
+                System.out.println( "The number is: 2!");
             case 3:
-                return "The number is: 3!";
+                System.out.println("The number is: 3!");
             default:
-                return "Neither of the cases.";
+                System.out.println("Neither of the cases.");
         }
     }
 
@@ -81,13 +81,21 @@ public class LogicalOp {
             return false;
     }
 
-    public int biggest (int x, int y, int w){
-        if (x > y){
-            return x;
-        } else if (y > w){
-            return y;
+    public int returnBiggestNumber (int firstNumber, int secondNumber, int thirdNumber){
+
+        if (firstNumber >= secondNumber && firstNumber >= thirdNumber) {
+
+            return firstNumber;
+
+        } else if (secondNumber >= firstNumber && secondNumber >= thirdNumber) {
+
+            return secondNumber;
+
         } else {
-            return w;
+
+            return thirdNumber;
+
         }
+
     }
 }

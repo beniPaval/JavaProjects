@@ -3,7 +3,7 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        printMyName();
+        /*printMyName();
 
         System.out.println("Rezultatul impartirii a doua numere, daca un numar nu este intreg: " + virgula(10, 3));
 
@@ -46,10 +46,12 @@ public class Main {
         System.out.println(op.checkText(textt,7));
         System.out.println(op.checkNumb(5));
         System.out.println(op.checkNumb4(0));
-        System.out.println(op.caseN(1));
         System.out.println(op.isNumberEven(266));
         System.out.println(op.isEligibleToVote(19));
-        System.out.println(op.biggest(10,20,5));
+        System.out.println(op.returnBiggestNumber(30,20,5)); */
+
+        loops ls = new loops();
+
 
 
     }
